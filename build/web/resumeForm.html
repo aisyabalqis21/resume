@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Form</title>
+</head>
+<body>
+    <h2>Student Resume Form</h2>
+
+    <form action="ResumeController" method="POST">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Student ID:</td>
+                <td><input type="text" name="studentId" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Program Code:</td>
+                <td><input type="text" name="programCode" required></td>
+            </tr>
+            <tr>
+                <td>CGPA:</td>
+                <td><input type="number" name="cgpa" step="0.01" required></td>
+            </tr>
+            <tr>
+                <td>Years of Experience:</td>
+                <td><input type="number" name="experience" value="0" required></td>
+            </tr>
+            <tr>
+                <td>Career Objective:</td>
+                <td><input type="text" name="objective"></td>
+            </tr>
+            <tr>
+                <td>Skills:</td>
+                <td>
+                    <input type="checkbox" name="skills" value="Java"> Java
+                    <input type="checkbox" name="skills" value="Python"> Python
+                    <input type="checkbox" name="skills" value="SQL"> SQL
+                    <input type="checkbox" name="skills" value="Web"> Web
+                </td>
+            </tr>
+            <tr>
+                <td>Internship:</td>
+                <td>
+                    <input type="radio" name="internship" value="yes" required> Yes
+                    <input type="radio" name="internship" value="no"> No
+                </td>
+            </tr>
+        </table>
+
+        <input type="hidden" name="securityToken_456" value="11">
+
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
